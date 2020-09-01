@@ -1,19 +1,18 @@
-# Kimberley Cabrera-Boggs
-# August 31, 2020
+Kimberley Cabrera-Boggs
+August 31, 2020
 
-# Change Management
-## Change Enablement in ITIL 4
+Change Enablement in ITIL 4
 
-# What is Change Enablement?
-_The purpose of the change enablement practice is to maximize the number of successful IT changes by ensuring   
+What is Change Enablement?
+The purpose of the change enablement practice is to maximize the number of successful IT changes by ensuring   
   that risks have been properly assessed, authorizing changes to proceed, and managing the change schedule.
   
-_Standard Change - A low-risk, pre-authorized change that is well understood and fully documented,   
+Standard Change - A low-risk, pre-authorized change that is well understood and fully documented,   
 and can be implemented without needing additional authorization. Is often initiated as a service   
 request, but may also be an operational change. Requires a full risk assessment and authorization  
 only during creation, or modification due to business change or occurrence of an incident.
 
-_Normal Change - 
-_Emergency Change
+Normal Change - 
+Emergency Change
   
   
