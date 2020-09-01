@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Script:                 Append Date and Time
+# Author:                 Kimberley Cabrera-Boggs
+# Date of last revision:  September 1, 2020
+# Description of purpose: Create a bash script that copies
+
+# Show time and date
+
+# Declaration of variables:
+
+year=`date +%Y`
+month=`date +%m`
+day=`date +%d`
+hour=`date +%H`
+minute=`date +%M`
+second=`date +%S`
+
+cp /var/log/syslog timeanddate.txt
+
+# Append a row
+
+echo "$day-$month-$year $hour:$minute:$second " >> timeanddate.txt
+echo "Appended file:"
+cat timeanddate.txt
+
+
+# Declaration of functions:
+# Main
+# End 
