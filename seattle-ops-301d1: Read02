@@ -6,9 +6,42 @@ What is a Computer Network?
 
 Computer networks are 2 or more computers that are connect to eachother.  
 
-#Computer Network Types  
+Computer Network Types  
 
-LAN (local area network) 
+LAN (local area network)  
+WLAN (wireless local area network)  
+WAN (wide area network)  
+MAN (metropolitan area network)  
+PAN (personal area network)  
+SAN (storage area network)  
+CAN (campus area network)  
+VPN (virtual private network)  
+
+Important terms and concepts  
+
+IP address  
+Nodes  
+Routers  
+Switches  
+  Circuit switching  
+  Packet switching 
+  Message switching 
+Ports 
+Network Cables Types  
+
+Network topology  
+  A bus network topology
+  In a ring topology  
+  In a star network topology  
+  A mesh topology  
+  
+Type of mesh networks  
+    Full Mesh Topology  
+    Wireless Mesh NEtwork  
+    
+ 
+
+
 
 
 
