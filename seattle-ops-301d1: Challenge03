@@ -5,4 +5,22 @@ Author                     Kimberley Cabrera-Boggs
 Date of last revision      September 2, 2020
 Description of purpose     File Permissions
 
-# 
+# main
+
+"directory to make changes in " 
+read -p desktop directory
+echo "This is before changes"
+ls -la $directory
+
+# prompt user what permission
+
+read -p "read/write permissions " permission
+
+# change moderator permissions using variable stored from users input
+chmod -R $permission $directory
+echo "after the change "
+
+# final output showing the change
+ls -la $directory
+
+#end
