@@ -2,7 +2,7 @@
 
 # A Brief History of the DNS  
 
-- Thirty years ago, when the Internet was still in its infancy when you wanted to visit a  
+_ Thirty years ago, when the Internet was still in its infancy when you wanted to visit a  
 - website you had to know the IP address of that site. That’s because computers are and were  
 - only able to communicate using numbers.
 
@@ -45,5 +45,8 @@ Container deployment
 Cloud services
 Database server
 
+- RAM: 512MB
+CPU: 1 GHz
+Storage: 1 GB disk space (1.75 GB for all features to be installed)
 
 https://dnsmadeeasy.com/support/what-is-dns/
