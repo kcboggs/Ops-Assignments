@@ -1,0 +1,23 @@
+#! bin/bash 
+
+# Script Name             Ops Challenge 
+# Author                  Kimberley Cabrera-Boggs
+# Date of last revision   September 4, 2020
+# Description of purpose  Clean log files
+
+
+# Main  
+
+# script to remove contents in /var/log/syslog
+cat /var/log/messages
+> /var/log/messgaes 
+
+echo $cat /var/log/syslog
+
+# script to remove contents in /var/log/wtmp
+cat /var/log/wtmp
+> /var/log/wtmp
+
+echo $cat /var/log/wtmp
+
+# End
