@@ -1,9 +1,0 @@
-# What Is Network Segmentation?
-
-Network segmentation is an architectural approach that divides a network into multiple  
-segments or subnets, each acting as its own small network. 
-
-## The Trust Assumption  
-
-High-profile breaches have called the trust assumption into question. For one thing,  
-insiders can indeed be the source of breaches, often inadvertently but sometimes deliberately.
