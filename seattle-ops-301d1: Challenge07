@@ -1,0 +1,16 @@
+# Script Name            Ops Challenge 07
+# Author                 Kimberley Cabrera-Boggs
+# Date of last revision  September 8, 2020
+
+# This will import libraries
+import os
+
+# Declaration of variables
+# Description of purpose Functions
+
+for root, dirs, files in os.walk("."):
+    for filename in files:
+        print(filename)
+
+# Main
+# End
