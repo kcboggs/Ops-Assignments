@@ -50,3 +50,25 @@ Email to phone synchronisation | Centrally managed security | Centrally managed 
 Just to name a few
 
 https://www.windows-active-directory.com/fundamentals-of-active-directory-workgroups-and-domains.html
+
+
+# The structures and benefits of organizational units  
+
+Organizational units (OUs)  
+Functional/divisional
+Geographic
+Object
+
+### Benefits of using OUs
+
+Manage objects efficiently    
+Deploy Group Policy Object (GPO) settings  
+Delegate administrative control  
+
+### Why might an organization use organizational units?   
+
+Becasue they are useful when you want to deploy group policy settings to a subset of users, groups,   
+and computers within your domain. 
+
+
+https://www.windows-active-directory.com/the-structures-and-benefits-of-organizational-units.html
