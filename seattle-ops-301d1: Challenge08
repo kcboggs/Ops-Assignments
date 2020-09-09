@@ -1,1 +1,20 @@
+# Script Name              Ops Challenge 08
+# Author                   Kimberley Cabrera-Boggs
+# Date of Last Revision    September 9, 2020
+# Description of Purpose   Powershell AD Automation
 
+# This function will create a new user in Active Directory
+
+function CreateUser(){
+New-ADUser `
+-Name "Franz Ferdinand" `
+-EmailAddress "ferdi@globex.com" `
+-Department "TPS" `
+-City "Springfield" `
+-State "Oregon" `
+-Title "Reporting Lead" `
+
+}
+CreatUser
+
+# End
