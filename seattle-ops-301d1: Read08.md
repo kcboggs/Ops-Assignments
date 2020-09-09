@@ -21,17 +21,10 @@ undergo many changes.
 We need to consider two sides of its structure:  
 
 The logical side: This is the hierarchy of objects such as users, computers, groups,  
-and organizational units. The AD administrator needs to design a logical side that closely  
-mimics how the business functions and helps them effectively manage their IT infrastructure.  
-Correctly arranging these various objects helps you easily manage permissions (access) and security.
-
+and organizational units.
 
 The physical side: When designing the physical side, the administrator needs to think about the servers  
-that provide the AD services and contain all the critical directory information. They need to answer questions such as:
-How will these servers speak to each other and share information?
-What network links need to be set up so that remote users can be given access?
-How can users in different locations be directed to the servers?
-
+that provide the AD services and contain all the critical directory information. 
 
 ### Workgroups vs. domains
 
@@ -51,7 +44,6 @@ Just to name a few
 
 https://www.windows-active-directory.com/fundamentals-of-active-directory-workgroups-and-domains.html
 
-
 # The structures and benefits of organizational units  
 
 Organizational units (OUs)  
@@ -70,5 +62,20 @@ Delegate administrative control
 Becasue they are useful when you want to deploy group policy settings to a subset of users, groups,   
 and computers within your domain. 
 
-
 https://www.windows-active-directory.com/the-structures-and-benefits-of-organizational-units.html
+
+# Manage Role Based Access Control with Server Manager
+
+Create a User Role for Access Control
+
+Create an Access Policy
+
+Set Access Scope for a DNS Zone
+
+Set Access Scope for DNS Resource Records
+
+View Roles and Role Permissions
+
+
+
+### Have a look around Microsoft’s official documentation to get an idea of processes surrounding RBAC.
