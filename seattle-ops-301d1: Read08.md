@@ -66,15 +66,11 @@ https://www.windows-active-directory.com/the-structures-and-benefits-of-organiza
 
 # Manage Role Based Access Control with Server Manager
 
-Create a User Role for Access Control
-
-Create an Access Policy
-
-Set Access Scope for a DNS Zone
-
-Set Access Scope for DNS Resource Records
-
-View Roles and Role Permissions
+Item 1. Create a User Role for Access Control
+Item 2. Create an Access Policy
+Item 3. Set Access Scope for a DNS Zone
+Item 4. Set Access Scope for DNS Resource Records
+Item 5. View Roles and Role Permissions
 
 
 
