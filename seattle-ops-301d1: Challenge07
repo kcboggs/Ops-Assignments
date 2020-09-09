@@ -6,11 +6,29 @@
 import os
 
 # Declaration of variables
-# Description of purpose Functions
 
-for root, dirs, files in os.walk("."):
-    for filename in files:
-        print(filename)
+userInput = input("This is the directory I am accessing ")
+
+# Adding users imput from the user and displaying all the files within the user's directory
+
+def printUsersInput(userinput):
+    for (root, dirs, files) in os.walk(userInput):
+        print(root)
+        intoText(root)
+        print(dirs)
+        intoText(dirs)
+        print(files)
+        intoText(files)
+
+# Placing all the outputs into the files
+def intoText(texts):
+    fileWrite = open("./output.txt" , 'a')
+    fileWrite.writelines(texts)
+    fileWrite.write("")
+    fileWrite.close()
 
 # Main
+
+printUsersInput(userInput)
+
 # End
