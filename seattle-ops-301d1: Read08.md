@@ -72,6 +72,4 @@ https://www.windows-active-directory.com/the-structures-and-benefits-of-organiza
 * Set Access Scope for DNS Resource Records  
 * View Roles and Role Permissions  
 
-
-
-### Have a look around Microsoft’s official documentation to get an idea of processes surrounding RBAC.
+https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/manage-role-based-access-control-with-server-manager
