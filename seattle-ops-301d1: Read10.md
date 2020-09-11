@@ -1,13 +1,12 @@
 # What is a DMZ Network?
 
-a DMZ Network (sometimes referred to as a “demilitarized zone”) functions as a  
+DMZ Network also known as "Demilitarized Zone” behaves as a  
 subnetwork containing an organization's exposed, outward-facing services. It acts  
 as the exposed point to an untrusted networks, commonly the Internet.
 
-The goal of a DMZ is to add an extra layer of security to an organization's local  
-area network. A protected and monitored network node that faces outside the internal   
-network can access what is exposed in the DMZ, while the rest of the organization's  
-network is safe behind a firewall.
+The purpose of the DMZ is to add an extra layer of security to an organization's LAN.   
+A protected and monitored network node that faces outside the internal network can access  
+what is exposed in the DMZ, while the rest of the organization's network is safe behind a firewall.
 
 When implemented properly, a DMZ Network gives organizations extra protection in detecting   
 and mitigating security breaches before they reach the internal network, where valuable assets   
