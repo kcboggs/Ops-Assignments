@@ -1,0 +1,19 @@
+# Script Name              Ops Challenge 09
+# Author                   Kimberley Cabrera-Boggs
+# Date of last revision    September 10, 2020
+# Description of purpose   Python Collections
+
+# Assign to a variable a list of ten string elements
+states = ["California", "Washington", "Texas", "Georgia", "Florida", "Orgeon", "New York", "Illinois", "Mississippi", "Hawaii", "North Carolina"]
+
+# Print the fourth element of the list
+print(states[3])
+
+# Print the sixth through tenth element of the list
+print(states[5:11])
+
+# Change the value of the seventh element to “onion”
+states[6] = "Onion" 
+print(states)
+
+# End
