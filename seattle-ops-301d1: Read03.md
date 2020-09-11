@@ -1,21 +1,18 @@
-Kimberley Cabrera-Boggs
-September 2, 2020
-Endpoint Acquisition
+# Why Agents are necessary?
 
-Why Agents are necessary?
+_All company assets need to be monitored traditionally including on-premises devices, remote 
+sensitive and virtual assets. To reduce risks in organizations you can leverage endpoint agents._
 
-All company assets need to be monitored traditionally including on-premises devices, remote 
-sensitive and virtual assets. To reduce risks in organizations you can leverage endpoint agents.
+* Real time monitoring
+* Remote monitoring
+* Monitoring cloud and virtual infrastructure
+* Ability to take action through the agent
+* Assessment that does not require credential scanning
+* Limited resource impact
+* Streamlined deployment options
+* Interoperability
 
-Real time monitoring
-Remote monitoring
-Monitoring cloud and virtual infrastructure
-Ability to take action through the agent
-Assessment that does not require credential scanning
-Limited resource impact
-Streamlined deployment options
-Interoperability
-Things to consider when evaluating endpoint agents:
+**_Things to consider when evaluating endpoint agents_**
 
 Footprint
 Agent deployment options
