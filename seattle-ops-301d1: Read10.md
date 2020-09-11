@@ -29,16 +29,10 @@ The most common services are:
 
 # Why DMZ Networks are Important
 
-On many home networks, internet enabled devices are built around a local  
-area network which accesses the internet from a broadband router. However,   
-the router serves as both a connection point and a firewall, automating traffic  
-filtering to ensure only safe messages enter the local area network. So, on a home  
-network, a DMZ can built by adding a dedicated firewall, between the local area network  
-and the router. While more expensive, this structure can help to protect internal devices  
-from sophisticated attacks better protects the inside devices from possible attacks by the  
-outside.
+Home Internet enabled devices are built around a LAN which accesses the internet  
+from a broadband router.
 
-DMZ’s are an essential part of network security for both individual users and large organizations.  
+**DMZ’s are an essential part of network security for both individual users and large organizations.  
 They provides an extra layer of security to the computer network by restricting remote access to   
 internal servers and information, which can be very damaging if breached.
 
