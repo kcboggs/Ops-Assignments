@@ -56,8 +56,4 @@ file via HTTP. When the request reaches the correct (hardware) web server, the (
 request, finds the requested document, and sends it back to the browser, also through HTTP. (If the server doesn't  
 find the requested document, it returns a 404 response instead.)  
 
-
-
-
-
 https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server
