@@ -30,9 +30,9 @@ Some of the most commonly used protocols include:
 
 Point-to-Point Tunneling Protocol (PPTP)  
 
-Layer 2 Tunneling Protocol (L2TP)/Internet Protocol Security (IPSec)   
-Internet Key Exchange (IKEv2)/Internet Protocol Security (IPSec)    
-Secure Socket Tunneling Protocol (SSTP)  
-OpenVPN
+* Layer 2 Tunneling Protocol (L2TP)/Internet Protocol Security (IPSec)   
+* Internet Key Exchange (IKEv2)/Internet Protocol Security (IPSec)    
+* Secure Socket Tunneling Protocol (SSTP)  
+* OpenVPN
 
 https://www.vpnmentor.com/blog/ultimate-guide-to-vpn-tunneling/
