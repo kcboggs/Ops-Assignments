@@ -34,6 +34,6 @@ from a broadband router.
 
 **DMZ’s are an essential part of network security for both individual users and large organizations.  
 They provides an extra layer of security to the computer network by restricting remote access to   
-internal servers and information, which can be very damaging if breached.
+internal servers and information, which can be very damaging if breached.**
 
 https://www.barracuda.com/glossary/dmz-network
