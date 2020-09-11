@@ -20,9 +20,13 @@ tunnel while you directly access the internet through your ISP for others.
 
 ## What Are the Different VPN Tunneling Protocols?  
 A VPN tunneling protocol is an agreed-upon set of rules for data transmission and encryption.  
-Some of the most commonly used protocols include Point-to-Point Tunneling Protocol (PPTP), Layer  
-Two Tunneling Protocol (L2TP), Internet Protocol Security (IPSec), Secure Socket Tunneling Protocol  
-(SSTP), and Open VPN (SSL/TLS).
+Some of the most commonly used protocols include:  
+
+* Point-to-Point Tunneling Protocol (PPTP)  
+* Layer Two Tunneling Protocol (L2TP)  
+* Internet Protocol Security (IPSec)  
+* Secure Socket Tunneling Protocol (SSTP)  
+* Open VPN (SSL/TLS)
 
 Point-to-Point Tunneling Protocol (PPTP)  
 
