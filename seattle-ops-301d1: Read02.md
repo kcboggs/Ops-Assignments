@@ -36,14 +36,6 @@ _Knowing computer terminology is important in the industry_
  * Mesh topology  
   
 ## Type of mesh networks  
-    * Full Mesh Topology  
-    * Wireless Mesh NEtwork  
-    
- 
 
-
-
-
-
-
-
+* Full mesh topology  
+* Wireless topology  
