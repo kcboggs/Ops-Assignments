@@ -42,7 +42,7 @@ https://www.barracuda.com/glossary/dmz-network
 
 **_The term web server can refer to hardware or software, or both of them working together._**
 
-1. **Hardware server**, a web server is a computer that stores web server software and a website's  
+1. **Hardware server**, a _web server_ is a computer that stores web server software and a website's  
 component files. (for example, HTML documents, images, CSS stylesheets, and JavaScript files) A web   
 server connects to the Internet and supports physical data interchange with other devices connected to the web.  
 
