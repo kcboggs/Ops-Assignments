@@ -49,11 +49,6 @@ server connects to the Internet and supports physical data interchange with othe
 2. **Software server**, a web server includes several parts that control how web users access hosted files.   
 At a minimum, this is an HTTP server. An HTTP server is software that understands URLs (web addresses) and HTTP  
 (the protocol your browser uses to view webpages). An HTTP server can be accessed through the domain names of the  
-websites it stores, and it delivers the content of these hosted websites to the end user's device.
-
-Basic level whenever a browser needs a file that is hosted on a web server, the browser requests the  
-file via HTTP. When the request reaches the correct (hardware) web server, the (software) HTTP server accepts the   
-request, finds the requested document, and sends it back to the browser, also through HTTP. (If the server doesn't  
-find the requested document, it returns a 404 response instead.)  
+websites it stores, and it delivers the content of these hosted websites to the end user's device.___
 
 https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server
