@@ -1,0 +1,32 @@
+# Script Name              Ops Challenge 10
+# Author                   Kimberley Cabrera-Boggs
+# Date of last revision    September 11, 2020
+# Description of purpose   Python Conditional Statements
+
+# Variables
+# Functions
+
+# Create a boolean variable
+
+place = "Guam"
+
+def guessWhat():
+    answer=input("Where was I born?")
+
+    
+    if answer == place:
+        print("Awesome guess you are correct!")
+    elif answer is "Texas":
+        print("Nope! I lived there for about 2 years though!")
+        guessWhat()
+    else:
+        answer1 = input ("Do you give up?")
+        if answer1 is "yes": 
+            return
+        else:
+            guessWhat()
+
+guessWhat()
+print("Thanks for trying!")
+
+# End
