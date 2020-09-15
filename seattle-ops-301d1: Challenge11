@@ -1,1 +1,21 @@
+# Script Name              Ops Challenge 11
+# Author                   Kimberley Cabrera-Boggs
+# Date of last revision    September 14, 2020
+# Description of purpose   Python File Handling
 
+import os
+
+# Declaration of variables
+# Declaration of functions
+
+# Main
+
+file  =open("log.txt", "w") 
+file.write("Hello World! \n")  
+file.write("I'm just here! \n")  
+file.write("Doing it live! ")  
+file =open("log.txt", "r")
+print(file.readlines()[0])
+os.remove("log.txt")
+
+# End
