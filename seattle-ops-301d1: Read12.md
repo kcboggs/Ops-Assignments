@@ -32,3 +32,9 @@ which must be facilitated to achieve the goals of DevOps_
  
  https://www.bmc.com/blogs/devops-basics-introduction/
  
+# Infrastructure as Code
+ 
+# Why Infrastructure as Code?
+ 
+ 
+https://geekflare.com/infrastructure-as-code-intro/
