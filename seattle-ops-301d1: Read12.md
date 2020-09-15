@@ -36,5 +36,27 @@ which must be facilitated to achieve the goals of DevOps_
  
 # Why Infrastructure as Code?
  
+_Infrastructure as code (IaC) is infrastructure automation using software development principles and practices._  
+
+# Benefits
+_Infrastructure as code offers significant benefits over manual provisioning:_
+
+* Self-service
+* Idempotency
+* Reduced costs
+* Faster software delivery
+* Self Documenting
+* Version controlled
+* Validation and testing
+* Improved security
+
+# Configuration management vs. provisioning tools
+
+* Configuration management tools  
+* Provisioning tools
+
+
+
+ 
  
 https://geekflare.com/infrastructure-as-code-intro/
