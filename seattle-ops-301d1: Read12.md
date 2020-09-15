@@ -55,8 +55,9 @@ _Infrastructure as code offers significant benefits over manual provisioning:_
 * Configuration management tools  
 * Provisioning tools
 
+# Configuration management tools
 
+* Mutable vs. immutable infrastructure  
+* Imperative vs. declarative tools
 
- 
- 
 https://geekflare.com/infrastructure-as-code-intro/
