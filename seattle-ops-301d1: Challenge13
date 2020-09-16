@@ -1,1 +1,24 @@
+#! bin/bash
 
+# Script Name             Opa Challenge 13 
+# Author                  Kimberley Cabrera-Boggs
+# Date of last revision   September 16, 2020
+# Description of purpose  Python Request Library
+
+import requests
+
+# Declaration of variables
+# Declaration of functions
+
+# Main==
+
+# This is a requests.get function in a variable
+
+response = requests.get("https://api.github.com/users/kcboggs")
+
+# Print the status code obtained by the function using [var name].status code
+
+print(response.status_code)
+print(response.__dict__)
+
+# End
