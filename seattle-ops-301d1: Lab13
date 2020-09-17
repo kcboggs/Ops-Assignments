@@ -1,0 +1,76 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_Lab13Win19Serv_name": {
+            "defaultValue": "Lab13Win19Serv",
+            "type": "String"
+        },
+        "disks_Lab13Win19Serv_disk1_957cf59e5e734e7e8d3530e8ef1b208f_externalid": {
+            "defaultValue": "/subscriptions/c7a9ed1b-c00d-449c-8e92-dfa65b712ec4/resourceGroups/LAB13WIN19SERV_GROUP/providers/Microsoft.Compute/disks/Lab13Win19Serv_disk1_957cf59e5e734e7e8d3530e8ef1b208f",
+            "type": "String"
+        },
+        "networkInterfaces_lab13win19serv838_externalid": {
+            "defaultValue": "/subscriptions/c7a9ed1b-c00d-449c-8e92-dfa65b712ec4/resourceGroups/Lab13Win19Serv_group/providers/Microsoft.Network/networkInterfaces/lab13win19serv838",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Compute/virtualMachines",
+            "apiVersion": "2019-07-01",
+            "name": "[parameters('virtualMachines_Lab13Win19Serv_name')]",
+            "location": "eastus",
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "Standard_B1s"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "MicrosoftWindowsServer",
+                        "offer": "WindowsServer",
+                        "sku": "2019-Datacenter",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "osType": "Windows",
+                        "name": "[concat(parameters('virtualMachines_Lab13Win19Serv_name'), '_disk1_957cf59e5e734e7e8d3530e8ef1b208f')]",
+                        "createOption": "FromImage",
+                        "caching": "ReadWrite",
+                        "managedDisk": {
+                            "storageAccountType": "Premium_LRS",
+                            "id": "[parameters('disks_Lab13Win19Serv_disk1_957cf59e5e734e7e8d3530e8ef1b208f_externalid')]"
+                        },
+                        "diskSizeGB": 127
+                    },
+                    "dataDisks": []
+                },
+                "osProfile": {
+                    "computerName": "[parameters('virtualMachines_Lab13Win19Serv_name')]",
+                    "adminUsername": "kcboggs",
+                    "windowsConfiguration": {
+                        "provisionVMAgent": true,
+                        "enableAutomaticUpdates": true
+                    },
+                    "secrets": [],
+                    "allowExtensionOperations": true,
+                    "requireGuestProvisionSignal": true
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[parameters('networkInterfaces_lab13win19serv838_externalid')]"
+                        }
+                    ]
+                },
+                "diagnosticsProfile": {
+                    "bootDiagnostics": {
+                        "enabled": true,
+                        "storageUri": "https://lab13win19servgroupdiag.blob.core.windows.net/"
+                    }
+                }
+            }
+        }
+    ]
+}
