@@ -74,3 +74,19 @@
         }
     ]
 }
+
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "automationAccounts_Automate_c7a9ed1b_c00d_449c_8e92_dfa65b712ec4_WUS2_name": {
+            "value": null
+        },
+        "workspaces_defaultworkspace_c7a9ed1b_c00d_449c_8e92_dfa65b712ec4_wus2_name": {
+            "value": null
+        },
+        "solutions_Updates_DefaultWorkspace_c7a9ed1b_c00d_449c_8e92_dfa65b712ec4_WUS2__name": {
+            "value": null
+        }
+    }
+}
