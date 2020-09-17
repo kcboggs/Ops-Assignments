@@ -6,11 +6,12 @@
 # Description of purpose  Python Request Library
 
 import requests
+import os
 
 # Declaration of variables
 # Declaration of functions
 
-# Main==
+# Main
 
 #Prompt the user to type a string input as the variable for your destination URL.
 response = requests.get("https://api.github.com/users/kcboggs")
@@ -19,9 +20,23 @@ print(response.status_code)
 # Print github data
 print(response.__dict__)
 
-person = input("Welcome what's your name?")
-print("Hello", person, "!")
+person = input("Oh, hello! what is your name?")
+print("Welcome", person, "!")
+HTTPMod = (“GET \n” “POST \n” “PUT \n” “DELETE \n” “HEAD \n” “PATCH \n” “OPTIONS \n”)
+bigHead = input(‘Select a HTTP Method from the following: ’)
+print(‘You entered’ , person, ‘and Selected’, bigHead, ‘HTTP Method, Please confirm before proceeding.’)
+answer = input(“Enter yes or no:“)
 
-place = where("Enter the URL you are trying to visit today?")
-
-# End
+if answer ==“yes”:
+    response = requests.get(person)
+    print(response)
+elif answer == “no”:
+    print(“no”)
+else:
+    print(“Please enter yes or no.“)
+if response.status_code == 200:
+    print(‘Success!’)
+elif response.status_code == 404:
+    print(‘Not Found.’)
+ 
+# End    
